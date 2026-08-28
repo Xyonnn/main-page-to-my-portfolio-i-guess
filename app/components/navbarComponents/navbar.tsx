@@ -8,7 +8,7 @@ export default function Navbar(){
                 <a className="text-gray-200 hover:text-white transition-colors" href="#projects">Projekty</a>
                 <a className="text-gray-200 hover:text-white transition-colors" href="#about">O mnie</a>
                 <a className="text-gray-200 hover:text-white transition-colors" href="#contact">Kontakt</a>
-                <button className="px-3 py-1 text-sm rounded-md hover:bg-gray-900 transition-colors">PL</button>
+                <button className="px-3 py-1 text-sm rounded-md hover:bg-gray-900 transition-colors">PL | EN</button>
             </nav>
         </div>
     );
