@@ -3,10 +3,14 @@ import ProjectCom from "./components/mainComponents/projects";
 import Navbar from "./components/navbarComponents/navbar";
 import SectionDivider from "./components/mainComponents/sectionDivider";
 
+import { FaDiscord, FaGithub } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
+
 export default function Home() {
   return (
     <div className="scroll-smooth flex min-h-screen flex-col bg-gray-900 text-white">
         <Navbar/>
+
         <section className="flex min-h-screen items-center justify-center px-6">
           <div className="w-full max-w-4xl">
             <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl" >Xyon czyli ja</h1 >
@@ -14,11 +18,15 @@ export default function Home() {
             <a href="#projects" className="mt-8 inline-block text-sm text-gray-300 transition-colors hover:text-white">Moje projekty :3</a>
           </div>
         </section>
+
           <SectionDivider/>
+
         <section id="projects" className="scroll-mt-20">
           <ProjectCom/>
         </section>
+
           <SectionDivider/>
+
         <section id="about" className="scroll-mt-20">
           <div className="mx-auto flex min-h-screen max-w-5xl items-center px-6 py-24">
               <div className="w-full">
@@ -68,6 +76,39 @@ export default function Home() {
               </div>
           </div>
         </section>
+
+            <SectionDivider/>
+
+        <section id="contact" className="scroll-mt-20">
+            <div className="mx-auto flex max-w-5xl items-center px-6 py-24">
+                <div className="grid w-full items-center md:grid-cols-2">
+                    <div>
+                        <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
+                            Kontakt
+                        </h2>
+
+                        <p className="mt-2 max-w-xl text-lg leading-relaxed text-gray-400">
+                            Jeżeli spodobała ci się moja praca tu masz kontakt do mnie:
+                        </p>
+                    </div>
+
+                    <div className="flex justify-start gap-4 md:justify-end">
+                        <a href="https://github.com/Xyonnn" target="_blank" rel="noopener noreferrer" aria-label="GitHub" className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-800 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-gray-600 hover:text-white">
+                            <FaGithub size={24} />
+                        </a>
+
+                        <a href="https://discord.com/users/xyon_" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-800 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-gray-600 hover:text-white">
+                            <FaDiscord size={24} />
+                        </a>
+
+                        <a href="mailto:pj.kostera@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-800 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-gray-600 hover:text-white">
+                            <FiMail size={24} />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
         <Footer/>
     </div>
   );
