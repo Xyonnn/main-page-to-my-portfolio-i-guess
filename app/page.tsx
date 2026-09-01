@@ -1,21 +1,25 @@
+"use client"
+
 import Footer from "./components/footerComponents/footer";
 import ProjectCom from "./components/mainComponents/projects";
 import Navbar from "./components/navbarComponents/navbar";
 import SectionDivider from "./components/mainComponents/sectionDivider";
+import { useLang } from "./language/LanguageContext";
 
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export default function Home() {
+    const {t} = useLang();
   return (
     <div className="scroll-smooth flex min-h-screen flex-col bg-gray-900 text-white">
         <Navbar/>
 
         <section className="flex min-h-screen items-center justify-center px-6">
           <div className="w-full max-w-4xl">
-            <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl" >Xyon czyli ja</h1 >
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-400 sm:text-xl">Mlody, aspirujacy programista, ktory chce tworzyc strony internetowe</p>
-            <a href="#projects" className="mt-8 inline-block text-sm text-gray-300 transition-colors hover:text-white">Moje projekty :3</a>
+            <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl" >{t("heroSec.title")}</h1 >
+            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-400 sm:text-xl">{t("heroSec.description")}</p>
+            <a href="#projects" className="mt-8 inline-block text-sm text-gray-300 transition-colors hover:text-white">{t("heroSec.projects")}</a>
           </div>
         </section>
 
@@ -32,27 +36,24 @@ export default function Home() {
               <div className="w-full">
                   <div className="mb-6">
                       <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-                          Kilka słów o mnie
+                          {t("aboutSec.title")}
                       </h2>
                   </div>
 
                   <div className="grid gap-12 md:grid-cols-2">
                       <div>
                           <p className="text-lg leading-relaxed text-gray-400">
-                              Jestem młodym aspirującym programistą, który
-                              interesuje się tworzeniem stron internetowych
-                              i aplikacji.
+                              {t("aboutSec.description")}
                           </p>
 
                           <p className="mt-6 text-lg leading-relaxed text-gray-400">
-                              Obecnie rozwijam swoje umiejętności w React,
-                              Next.js oraz TypeScript poprzez tworzenie wlasnych projektów.
+                              {t("aboutSec.moreDescription")}
                           </p>
                       </div>
 
                       <div>
                           <p className="mb-5 text-sm text-gray-400">
-                              Technologie, z którymi pracuje:
+                              {t("aboutSec.technologies")}
                           </p>
 
                           <div className="flex flex-wrap gap-2">
@@ -84,11 +85,11 @@ export default function Home() {
                 <div className="grid w-full items-center md:grid-cols-2">
                     <div>
                         <h2 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-                            Kontakt
+                            {t("contactSec.title")}
                         </h2>
 
                         <p className="mt-2 max-w-xl text-lg leading-relaxed text-gray-400">
-                            Jeżeli spodobała ci się moja praca tu masz kontakt do mnie:
+                            {t("contactSec.description")}
                         </p>
                     </div>
 

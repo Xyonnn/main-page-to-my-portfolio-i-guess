@@ -1,0 +1,37 @@
+{
+    "navbarSec": {
+        "projects": "Projekty",
+        "about": "O mnie",
+        "contact": "Kontakt"
+    },
+    "heroSec": {
+        "title": "Xyon czyli ja",
+        "description": "Mlody, aspirujacy programista, ktory chce tworzyc strony internetowe",
+        "projects": "Moje projekty :3"
+    },
+    "projectSec": {
+        "tdlapp": {
+            "name": "To Do App",
+            "description": "Prosta aplikacja do zarządzania zadaniami stworzona za pomocą React, Node.js i Tailwind CSS.",
+            "status": "W trakcie rozwoju"
+        },
+        "minishop": {
+            "name": "Mini Sklep",
+            "description": "Mały e-commerce'owy projekt tworzony w TypeScript, Next.js i Tailwind CSS.",
+            "status": "W trakcie rozwoju"
+        }
+    },
+    "aboutSec": {
+        "title": "Kilka słów o mnie",
+        "description": "Jestem młodym aspirującym programistą, który interesuje się tworzeniem stron internetowych i aplikacji.",
+        "moreDescription": "Obecnie rozwijam swoje umiejętności w React, Next.js oraz TypeScript poprzez tworzenie wlasnych projektów.",
+        "technologies": "Technologie, z którymi pracuje:"
+    },
+    "contactSec": {
+        "title": "Kontakt",
+        "description": "Jeżeli spodobała ci się moja praca tu masz kontakt do mnie:"
+    },
+    "footerSec": {
+        "text": "Stworzone przez "
+    }
+}

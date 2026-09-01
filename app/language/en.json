@@ -1,0 +1,37 @@
+{
+    "navbarSec": {
+        "projects": "Projects",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "heroSec": {
+        "title": "Xyon",
+        "description": "Newbee programer whose wants to creat websites for people",
+        "projects": "My projects :3"
+    },
+    "projectSec": {
+        "tdlapp": {
+            "name": "To Do App",
+            "description": "Simple task management application built with React, Node.js and Tailwind CSS.",
+            "status": "Under Construction"
+        },
+        "minishop": {
+            "name": "Mini Shop",
+            "description": "Small e-commerce project built with TypeScript, Next.js and Tailwind CSS.",
+            "status": "Under Construction"
+        }
+    },
+    "aboutSec": {
+        "title": "Some words about me",
+        "description": "I'm a young, aspiring programmer with limited experience, interested in creating websites and applications.",
+        "moreDescription": "I am currently developing my skills in React, Next.js, and TypeScript by building my own projects.",
+        "technologies": "Languages I work with:"
+    },
+    "contactSec": {
+        "title": "Contact",
+        "description": "If you liked my work, heres contact to me:"
+    },
+    "footerSec": {
+        "text": "Made by "
+    }
+}
