@@ -5,17 +5,19 @@ import ProjectCom from "./components/mainComponents/projects";
 import Navbar from "./components/navbarComponents/navbar";
 import SectionDivider from "./components/mainComponents/sectionDivider";
 import { useLang } from "./language/LanguageContext";
+import { useDetectSection } from "./customHooks/useDetectSection";
 
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
 
 export default function Home() {
     const {t} = useLang();
+    const activeSection = useDetectSection(["hero", "projects", "about", "contact"]);
   return (
     <div className="scroll-smooth flex min-h-screen flex-col bg-gray-900 text-white">
-        <Navbar/>
+        <Navbar activeSection={activeSection} />
 
-        <section className="flex min-h-screen items-center justify-center px-6">
+        <section id="hero" className="flex min-h-screen items-center justify-center px-6">
           <div className="w-full max-w-4xl">
             <h1 className="text-5xl font-semibold tracking-tight sm:text-6xl md:text-7xl" >{t("heroSec.title")}</h1 >
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-gray-400 sm:text-xl">{t("heroSec.description")}</p>
