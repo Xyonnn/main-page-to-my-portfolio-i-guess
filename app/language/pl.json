@@ -33,5 +33,8 @@
     },
     "footerSec": {
         "text": "Stworzone przez "
+    },
+    "copyText":{
+        "text": "Skopiowano!"
     }
 }

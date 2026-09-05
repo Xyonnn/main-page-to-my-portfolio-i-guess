@@ -9,6 +9,7 @@ import { useDetectSection } from "./customHooks/useDetectSection";
 
 import { FaDiscord, FaGithub } from "react-icons/fa";
 import { FiMail } from "react-icons/fi";
+import CopyButton from "./components/mainComponents/linkButtons";
 
 export default function Home() {
     const {t} = useLang();
@@ -100,13 +101,9 @@ export default function Home() {
                             <FaGithub size={24} />
                         </a>
 
-                        <a href="https://discord.com/users/xyon_" target="_blank" rel="noopener noreferrer" aria-label="Discord" className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-800 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-gray-600 hover:text-white">
-                            <FaDiscord size={24} />
-                        </a>
+                        <CopyButton toCopy="xyon_" icon={<FaDiscord size={24}/>}/>
+                        <CopyButton toCopy="pj.kostera@gmail.com" icon={<FiMail size={24}/>}/>
 
-                        <a href="mailto:pj.kostera@gmail.com" target="_blank" rel="noopener noreferrer" aria-label="Email" className="flex h-14 w-14 items-center justify-center rounded-full border border-gray-800 text-gray-400 transition-all duration-300 hover:-translate-y-1 hover:border-gray-600 hover:text-white">
-                            <FiMail size={24} />
-                        </a>
                     </div>
                 </div>
             </div>
