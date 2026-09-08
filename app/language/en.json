@@ -6,7 +6,7 @@
     },
     "heroSec": {
         "title": "Xyon",
-        "description": "Newbee programer whose wants to creat websites for people",
+        "description": "Newbee programer who wants to create websites",
         "projects": "My projects :3"
     },
     "projectSec": {
@@ -22,7 +22,7 @@
         }
     },
     "aboutSec": {
-        "title": "Some words about me",
+        "title": "A few words about me",
         "description": "I'm a young, aspiring programmer with limited experience, interested in creating websites and applications.",
         "moreDescription": "I am currently developing my skills in React, Next.js, and TypeScript by building my own projects.",
         "technologies": "Languages I work with:"
